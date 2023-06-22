@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profil_ami">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#26C6DA">
+
+            <TextView
+
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                />
+
+            <ImageView
+                android:id="@+id/burung"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/bird1"
+                android:layout_toRightOf="@id/judul"
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/p1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/p11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_600sdp"
+            android:layout_below="@+id/p1"
+            android:background="#E3F2FD">
+
+            <RelativeLayout
+                android:id="@+id/poto"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector8">
+
+                <ImageView
+                    android:id="@+id/w2"
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="@dimen/_105sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/misya" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/isi"
+                android:layout_below="@+id/poto"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector6">
+
+                <TextView
+                    android:id="@+id/tex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Nama : Amisya Phatel"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tex2"
+                    android:layout_below="@+id/tex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Usia : 22 Years"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/tex3"
+                    android:layout_below="@+id/tex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tempat Kelahiran : Paguh Duku"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/tex4"
+                    android:layout_below="@+id/tex3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="No Telepon : 082343839403"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/isi2"
+                android:layout_below="@+id/isi"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector6">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="' Deskripsi Singkat '"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_below="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Saya adalah individu yang penuh semangat dan dedikasi dalam menjalani kehidupan.  Dengan pendidikan yang telah  diperoleh, Saya telah mengembangkan pemahaman yang mendalam tentang dunia di sekitarnya."
+                    android:textSize="@dimen/_9ssp"
+                    android:textFontWeight="@integer/material_motion_duration_long_1"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/isi3"
+                android:layout_below="@+id/isi2"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector6">
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="' Pengalaman Hidup '"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tt2"
+                    android:layout_below="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Hidup Saya penuh dengan beragam pengalaman yang berharga. Saya telah menghadapi berbagai tantangan dan rintangan, tetapi selalu mampu mengatasi mereka dengan keteguhan dan keberanian. Pengalaman hidup ini telah membentuk kepribadian Saya menjadi sosok yang tangguh, bijaksana, dan memiliki pemahaman yang mendalam tentang nilai-nilai kehidupan."
+                    android:textSize="@dimen/_9ssp"
+                    android:textFontWeight="@integer/material_motion_duration_long_1"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/isi4"
+                android:layout_below="@+id/isi3"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector6">
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="' Kepribadian '"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_below="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="memiliki kepribadian yang karismatik dan hangat. Ia selalu menyambut orang lain dengan senyuman dan sikap ramah. Kemampuannya untuk mendengarkan dengan empati membuatnya menjadi teman yang setia dan pendengar yang baik.Saya juga memiliki jiwa kepemimpinan yang kuat, mampu menginspirasi dan memotivasi orang lain di sekitarnya."
+                    android:textSize="@dimen/_9ssp"
+                    android:textFontWeight="@integer/material_motion_duration_long_1"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnbinding"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/isi4"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Log Out"
+                android:textSize="@dimen/_9ssp" />
+
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

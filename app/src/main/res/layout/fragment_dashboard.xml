@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/no1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#26C6DA">
+
+        <TextView
+
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tramissyu!!"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            />
+
+        <ImageView
+            android:id="@+id/burung"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/bird1"
+            android:layout_toRightOf="@id/judul"
+            />
+        <ImageView
+            android:id="@+id/tik"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:background="@drawable/titik"
+            android:layout_toRightOf="@id/burung"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/no1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_570sdp"
+            android:layout_below="@+id/no1"
+            android:background="#E3F2FD">
+
+            <ImageView
+                android:id="@+id/sleep"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/slep" />
+
+            <TextView
+                android:id="@+id/f1"
+                android:layout_below="@+id/sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Belum Ada Pesanan Aktif"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+            <TextView
+                android:id="@+id/f2"
+                android:layout_below="@+id/f1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Temukan dibawah ini inspirasi untuk petualangan Anda"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/f3"
+                android:layout_below="@+id/f2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="berikutnya!!"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+
+        <RelativeLayout
+            android:id="@+id/kotak1"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/f3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/selector6">
+
+            <ImageView
+                android:id="@+id/pengaturan"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/book"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/h5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/pengaturan"
+                android:text=" Daftar Pembelian Anda "
+                android:textColor="#000"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+
+
+            <ImageButton
+                android:id="@+id/btsyarat"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toRightOf="@id/h5"
+                android:background="@drawable/pencet"
+                android:textColor="@color/white"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kotak2"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/kotak1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/selector6">
+
+            <ImageView
+                android:id="@+id/bantuan"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/back"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/hhh5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/bantuan"
+                android:text="Refund Anda"
+                android:textColor="#000"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+
+            <ImageButton
+                android:id="@+id/btbantuan"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@id/hhh5"
+                android:background="@drawable/pencet"
+                android:textColor="@color/white"
+
+                />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kotak3"
+            android:layout_below="@+id/kotak2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#C5CAE9">
+
+            <TextView
+                android:id="@+id/texx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_20sdp"
+                android:text="Lebih Hemat Pakai PayLater"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+            <TextView
+                android:id="@+id/texxx3"
+                android:layout_below="@+id/texx3"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="Daftar dan dapatkan promo tambahan agar liburanmu selanjutnya tambah hemat!"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+        </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/kotak3"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lyuscrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_135sdp"
+                    android:background="#C5CAE9"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:id="@+id/sc1"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/a1" />
+
+                    <ImageView
+                        android:id="@+id/sc2"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/a2" />
+
+                    <ImageView
+                        android:id="@+id/sc3"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/a3" />
+
+                    <ImageView
+                        android:id="@+id/sc4"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/a1" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
